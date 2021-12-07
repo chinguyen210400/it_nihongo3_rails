@@ -1,3 +1,7 @@
+<% if @book.image.attached? %>
+  <%= image_tag @book.image %>
+<% end %>
+
 <p>
   <strong>Title:</strong>
   <%= @book.title %>
